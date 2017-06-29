@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Angular Project</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!--<link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app.animations.css" />-->
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="app.component.js"></script>
+    <script src="home/home.component.js"></script>
+    <script src="about/about.component.js"></script>
+    <script src="contact/contact.component.js"></script>
+  <script src="app.module.js"></script>
+</head>
+
+<body ng-app="spaApp">
+  <header>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Simple Routing</a>
+        </div>
+        <ul class="nav navbar-nav nav-right">
+          <li><a href="#home"><i class="fa fa-home"></i> Home</a>
+          </li>
+          <li><a href="#about"><i class="fa fa-shield"></i> About</a>
+          </li>
+          <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div>vu duc nghia</div>
+  <div id="main">
+    ng view
+    <div ng-view></div>
+  </div>
+</body>
+
+</html>
